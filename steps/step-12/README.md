@@ -1,4 +1,4 @@
-# CloudNativeApplicationsHandsOn-DevDaysEurope-2022
+# CloudNativeApplicationsHandsOn-DotNetDeveloperDays-2022
 
 [Previous step](../step-11/README.md) - [Next step](../step-13/README.md)
 
@@ -11,7 +11,7 @@ Installing the NGINX ingress extension can be performed manually, but you can al
 [Find more information about deploying the NGINX ingress extension](https://kubernetes.github.io/ingress-nginx/deploy)
 
 ```
-kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v1.2.0/deploy/static/provider/cloud/deploy.yaml
+kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v1.4.0/deploy/static/provider/cloud/deploy.yaml
 ```
 
 This script has installed a new namespace and added the needed resources within this new namespace.

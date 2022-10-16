@@ -1,4 +1,4 @@
-# CloudNativeApplicationsHandsOn-DevDaysEurope-2022
+# CloudNativeApplicationsHandsOn-DotNetDeveloperDays-2022
 
 [Previous step](../step-06/README.md) - [Next step](../step-08/README.md)
 
