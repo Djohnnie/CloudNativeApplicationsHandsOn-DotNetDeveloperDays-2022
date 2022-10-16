@@ -11,7 +11,7 @@ Use the Azure portal to create a new Azure Kubernetes Service:
 Define the Kubernetes cluster name, region, version and node size:
 
 ```
-aks-involved-cafe-2020-07
+aks-dotnetdeveloperdays-2020
 ```
 
 ![dotnet new](sshot-21.png)

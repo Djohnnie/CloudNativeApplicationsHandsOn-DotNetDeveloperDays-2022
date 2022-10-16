@@ -13,13 +13,13 @@ az aks show --resource-group <your resource group> --name <your aks cluster> --q
 ```
 
 ```
-az aks show --resource-group rg-involved-cafe-2020-07 --name aks-involved-cafe-2020-07 --query nodeResourceGroup -o tsv
+az aks show --resource-group rg-dotnetdeveloperdays-2022 --name aks-dotnetdeveloperdays-2022 --query nodeResourceGroup -o tsv
 ```
 
 For my case, it outputs the following resource group:
 
 ```
-MC_rg-involved-cafe-2020-07_aks-involved-cafe-2020-07_westeurope
+MC_rg-dotnetdeveloperdays-2022_aks-dotnetdeveloperdays-2022_westeurope
 ```
 
 You can find the resource group and its resources inside the Azure Portal using the search feature:

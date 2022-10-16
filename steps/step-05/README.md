@@ -11,7 +11,7 @@ Use the Azure portal to create a new Azure Container Registry:
 Define the container registry name and region:
 
 ```
-involvedcafe202007
+dotnetdeveloperdays2022
 ```
 
 ![dotnet new](sshot-24.png)
@@ -27,7 +27,7 @@ az aks update -g <resource-group> -n <aks-name> --attach-acr <acr-name>
 ```
 
 ```
-az aks update -g rg-involved-cafe-2020-07 -n aks-involved-cafe-2020-07 --attach-acr involvedcafe202007
+az aks update -g rg-dotnetdeveloperdays-2020 -n aks-dotnetdeveloperdays-2020 --attach-acr dotnetdeveloperdays2022
 ```
 
 Inside Visual Studio Code, open Kubernetes in the Activity Bar and select your Kubernetes cluster from the Azure Cloud pane:

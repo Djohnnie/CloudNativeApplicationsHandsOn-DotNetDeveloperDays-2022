@@ -77,7 +77,7 @@ spec:
     spec:
       containers:
       - name: webapi
-        image: involvedcafe202007.azurecr.io/webapi:latest
+        image: dotnetdeveloperdays2022.azurecr.io/webapi:latest
         resources:
           limits:
             memory: "128Mi"

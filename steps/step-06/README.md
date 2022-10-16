@@ -28,8 +28,7 @@ You are going to create a new namespace. Double-click the default namespace and 
 apiVersion: v1
 kind: Namespace
 metadata:
-  name: involved
-  resourceVersion: "144"
+  name: dotnetdeveloperdays
 spec:
   finalizers:
   - kubernetes
@@ -66,13 +65,11 @@ spec:
     spec:
       containers:
       - name: workerservice
-        image: involvedcafe202007.azurecr.io/workerservice:latest
+        image: dotnetdeveloperdays2022.azurecr.io/workerservice:latest
         resources:
           limits:
             memory: "128Mi"
             cpu: "500m"
-        ports:
-        - containerPort: 80
 ```
 
 Use the Kubernetes: Apply command to use this deployment script and create and run the Kubernetes Pod.

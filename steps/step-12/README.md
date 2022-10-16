@@ -41,7 +41,7 @@ az resource show --query id --resource-type Microsoft.Network/publicIPAddresses 
 ```
 
 ```
-az resource show --query id --resource-type Microsoft.Network/publicIPAddresses -n aks-involved-cafe-2020-07-public-ip -g MC_rg-involved-cafe-2020-07_aks-involved-cafe-2020-07_westeurope
+az resource show --query id --resource-type Microsoft.Network/publicIPAddresses -n aks-dotnetdeveloperdays-2022-public-ip -g MC_rg-dotnetdeveloperdays-2022_aks-dotnetdeveloperdays-2022_westeurope
 ```
 
 For the next script, copy the response from the previous script:
@@ -51,7 +51,7 @@ az network public-ip update --ids "<copied-response>" --dns-name <dns-name>
 ```
 
 ```
-az network public-ip update --ids "/subscriptions/5db7e9b4-a01f-4bd4-b7e8-26ca1d5b3ad3/resourceGroups/MC_rg-involved-cafe-2020-07_aks-involved-cafe-2020-07_westeurope/providers/Microsoft.Network/publicIPAddresses/aks-involved-cafe-2020-07-public-ip" --dns-name involved-cafe-2020-07
+az network public-ip update --ids "/subscriptions/5db7e9b4-a01f-4bd4-b7e8-26ca1d5b3ad3/resourceGroups/MC_rg-dotnetdeveloperdays-2022_aks-dotnetdeveloperdays-2022_westeurope/providers/Microsoft.Network/publicIPAddresses/aks-dotnetdeveloperdays-2022-public-ip" --dns-name dotnetdeveloperdays-2022
 ```
 
 Now browse to your custom DNS to check if the NGINX ingress controller is working. If you get a 404 NOT FOUND, you are good!
@@ -70,7 +70,7 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-  - host: devdayseurope-blazor.westeurope.cloudapp.azure.com
+  - host: dotnetdeveloperdays-2022.westeurope.cloudapp.azure.com
     http:
       paths:
       - path: /(.*)

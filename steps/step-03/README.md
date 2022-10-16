@@ -11,7 +11,7 @@ Open the Azure Portal, login with your Azure subscription account and create a n
 Create the resource group inside your selected subscription and West-Europe region:
 
 ```
-rg-involved-cafe-2020-07
+rg-dotnetdeveloperdays-2020
 ```
 
 ![dotnet new](sshot-19.png)

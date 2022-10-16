@@ -2,9 +2,9 @@
 
 [Previous step](../step-09/README.md) - [Next step](../step-11/README.md)
 
-## Step 10 - Create an ASP.NET Core MVC Web application and deploy it to Kubernetes
+## Step 10 - Create an ASP.NET Blazor Server Web application and deploy it to Kubernetes
 
-Create a new ASP.NET Core MVC web application using the command palette in Visual Studio Code:
+Create a new Blazor Server web application using the command palette in Visual Studio Code:
 
 ![dotnet new](sshot-56.png)
 
@@ -287,20 +287,20 @@ Create two new deployment YAML file to deploy the Web application. One for the d
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: web
+  name: blazor
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: web
+      app: blazor
   template:
     metadata:
       labels:
-        app: web
+        app: blazor
     spec:
       containers:
-      - name: webapi
-        image: involvedcafe202007.azurecr.io/web:latest
+      - name: blazor
+        image: dotnetdeveloperdays2022.azurecr.io/web:latest
         resources:
           limits:
             memory: "128Mi"
@@ -315,10 +315,10 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: web
+  name: blazor
 spec:
   selector:
-    app: web
+    app: blazor
   ports:
   - port: 80
     targetPort: 80
